@@ -48,3 +48,7 @@ Resources:
           SubnetId: !ImportValue 
             'Fn::Sub': '${PublicSubnet}-SubnetID'
 ```
+
+
+### CloudFormation Support for external resources 
+Custom resources (CRs) are the resources that don't fall under the official support of CloudFormation. CRs can be declared in a long (AWS::CloudFormation::CustomResource) or short form (Custom::MyResourceName)
