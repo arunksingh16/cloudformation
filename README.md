@@ -52,3 +52,21 @@ Resources:
 
 ### CloudFormation Support for external resources 
 Custom resources (CRs) are the resources that don't fall under the official support of CloudFormation. CRs can be declared in a long (AWS::CloudFormation::CustomResource) or short form (Custom::MyResourceName)
+
+#### Use Macros
+
+#### AWS SAM
+The SAM template, on its own, is nothing but a macro template that will be processed during deployment by CloudFormation.
+```
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  DynamoDb:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      TableName: myTable
+      PrimaryKey:
+        Name: id
+        Type: string
+```
+
+#### AWS CDK
