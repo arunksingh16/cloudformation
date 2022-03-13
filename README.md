@@ -70,3 +70,11 @@ Resources:
 ```
 
 #### AWS CDK
+
+
+## TIPS
+- QUERY AMI
+```
+aws ec2 describe-images --owners amazon --filters "Name=name,Values=amzn*" --query 'sort_by(Images, &CreationDate)[].Name'
+```
+https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/
