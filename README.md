@@ -1,7 +1,9 @@
 # cloudformation
-AWS Cloudformation
-
-
+Why IaaC
+- Scaling
+- Version Management
+- Accountability
+- Reusability
 
 
 ### Important Functions -
