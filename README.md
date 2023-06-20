@@ -8,7 +8,11 @@ Why IaC
 
 ### Best Practices 
 - Divide stacks into smaller chunks
-- Reuse standard templates 
+- Reuse standard templates
+- Mapped variables
+- conditions
+- Nested stacks
+- cross stack ref instead of nested stack but check limitations
 
 ### Important Functions -
 - The `Fn::GetAtt` intrinsic function returns the value of an attribute from a resource in the template
