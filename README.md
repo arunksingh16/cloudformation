@@ -1,10 +1,14 @@
 # cloudformation
-Why IaaC
+Why IaC
 - Scaling
 - Version Management
 - Accountability
 - Reusability
 
+
+### Best Practices 
+- Divide stacks into smaller chunks
+- Reuse standard templates 
 
 ### Important Functions -
 - The `Fn::GetAtt` intrinsic function returns the value of an attribute from a resource in the template
